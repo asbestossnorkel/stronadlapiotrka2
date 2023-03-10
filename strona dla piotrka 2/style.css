@@ -1,0 +1,152 @@
+body {
+  background: rgb(14, 14, 14);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  right: 0%;
+  background-color: antiquewhite;
+  width: 70%;
+  min-height: 100vh;
+}
+
+.header {
+  border-radius: 0;
+  display: inline-block;
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.maininformation h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 500%;
+  font-family: "Lucidatypewriter";
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.secondaryinformation {
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  margin-left: 6.7%;
+  font-family: "Lucidatypewriter";
+}
+
+.firstnews {
+  margin-bottom: 6%;
+  position: relative;
+}
+
+.p1secondaryphoto {
+  margin-left: 1%;
+  position: absolute;
+}
+
+.secondaryphoto {
+  border: 4px solid;
+  border-color: rgb(0, 0, 0);
+}
+
+.secondaryphoto:hover {
+  border-color: rgb(233, 148, 44);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(233, 148, 44);
+}
+
+.buy {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: rgb(0, 0, 0);
+  background-color: white;
+  float: right;
+  margin-right: 4.4%;
+  margin-left: 2.2%;
+}
+
+.buy:hover {
+  border-color: rgb(233, 148, 44);
+}
+
+.maininformationontheleft {
+  position: fixed;
+  top: 1.5%;
+  width: 30%;
+}
+
+.maininformationontheleft ul {
+  font-size: 105%;
+  margin-left: 1%;
+  width: 90%;
+  list-style-type: none;
+  padding-right: 1%;
+}
+
+.maininformationontheleft ul li {
+  margin-bottom: 3%;
+  font-family: "Lucidatypewriter";
+  font-size: 190%;
+  background-color: 14, 14, 14;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  padding: 3% 3%;
+  text-transform: uppercase;
+}
+
+.maininformationontheleft ul li:active,
+.maininformationontheleft ul li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.maininformationontheleft ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-top: 25%;
+  }
+
+  .maininformationontheleft {
+    width: 100%;
+    top: 0;
+    background: rgb(14, 14, 14);
+    position: fixed;
+    flex-direction: column-reverse;
+    margin-top: -3%;
+  }
+
+  .maininformationontheleft ul {
+    padding-top: 1.1%;
+  }
+
+  .maininformationontheleft ul li {
+    width: 30%;
+    display: inline-block;
+    font-size: 105%;
+    margin-bottom: 0;
+    padding: 2% 1%;
+  }
+
+  .firstthree {
+    break-after: always;
+  }
+}
